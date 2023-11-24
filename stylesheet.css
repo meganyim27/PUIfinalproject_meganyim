@@ -44,7 +44,7 @@ a:active { text-decoration: none; color: #2D3842;}
 
 .tags {
     display: flex;
-    flex-direction:;
+    flex-direction: row;
     gap: 10px;
     font-size: 25px;
     font-weight: bold;
