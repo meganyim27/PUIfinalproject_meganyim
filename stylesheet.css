@@ -35,7 +35,7 @@ a:active { text-decoration: none; color: #2D3842;}
   margin-left: 50px;
   font-family: "Montserrat";
   color: #2D3842;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: normal;
 }
 
@@ -308,7 +308,6 @@ figure.snip0060.hover figcaption::before {
 
 .about-trip-container > .details {
   margin: 20px 10px 10px 40px;
-  /* margin-right: 10px; */
 }
 
 /* trip highlights section */
