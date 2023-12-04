@@ -3,7 +3,7 @@
 
 body {
     background-color: #F5EDE4;
-    font-family: 'Caveat Brush', cursive;
+    font-family: "Montserrat";
 }
 
 /* link stylings */
@@ -13,19 +13,31 @@ a:hover { text-decoration: none; color: #2D3842;}
 a:active { text-decoration: none; color: #2D3842;}
 
 .title-container {
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .title {
-    display: block;
+    display: flex;
+    font-family: 'Caveat Brush', cursive;
     color: #2D3842;
+    margin: 0px;
     width: 500px;
-    height: 5px;
+    height: 110px;
     font-weight: bold;
     font-size: 100px;
 }
 
+.subtitle {
+  margin-top: 35px;
+  margin-left: 50px;
+  font-family: "Montserrat";
+  color: #2D3842;
+  font-size: 25px;
+  font-weight: normal;
+}
 
 /* ********* Landing Page ********* */
 
@@ -46,6 +58,7 @@ a:active { text-decoration: none; color: #2D3842;}
     display: flex;
     flex-direction: row;
     gap: 10px;
+    font-family: 'Caveat Brush', cursive;
     font-size: 25px;
     font-weight: bold;
 }
@@ -81,20 +94,19 @@ a:active { text-decoration: none; color: #2D3842;}
     flex-direction: column;
 }
 
-#gallery-page-title {
-    margin-top: 0px;
-    margin-bottom: 150px;
-    width: auto;
-}
-
 .gallery-pictures-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 25px;
 }
 
 .gallery-card-container {
     display: flex;
+    margin-bottom: 25px;
+    justify-content: space-evenly;
+    font-family: 'Caveat Brush', cursive;
     background-color: #ffffff;
 }
 
@@ -239,4 +251,85 @@ figure.snip0060.hover figcaption::before {
   opacity: 1;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+}
+
+/* ********* Map Page ********* */
+
+.map-page-container {
+  max-width: 100%;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+#map {
+  border: 2px solid #2D3842;
+}
+
+/* ********* Trips Page ********* */
+
+.trip-page-container {
+  max-width: 100%;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-image-container img{
+  display: block;
+  margin: auto;
+  width: 600px;
+}
+
+.header {
+  margin: 10px 0px 0px 0px;
+  font-family: "Caveat Brush", cursive;
+  color: #2D3842;
+  font-size: 35px;
+}
+
+.details {
+  font-size: 18px;
+  color: #2D3842;
+}
+
+/* about trip section */
+.about-trip-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.about-trip-container > .details {
+  margin: 20px 10px 10px 40px;
+  /* margin-right: 10px; */
+}
+
+/* trip highlights section */
+.trip-highlights-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-highlights-container img{
+  display: block;
+  width: 500px;
+  height: 325px;
+}
+
+.trip-highlights-content-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px 10px 40px;
+}
+
+.trip-top3-container {
+  display: flex;
+  flex-direction: column;
 }

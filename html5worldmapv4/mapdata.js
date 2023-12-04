@@ -1,7 +1,7 @@
 var simplemaps_worldmap_mapdata={
   main_settings: {
    //General settings
-    width: "1200", //'700' or 'responsive'
+    width: "1100", //'700' or 'responsive'
     background_color: "#FFFFFF",
     background_transparent: "yes",
     popups: "detect",
@@ -63,7 +63,7 @@ var simplemaps_worldmap_mapdata={
     div: "map",
     auto_load: "yes",
     rotate: "0",
-    url_new_tab: "yes",
+    url_new_tab: "no",
     images_directory: "default",
     import_labels: "no",
     fade_time: 0.1,
@@ -960,38 +960,42 @@ var simplemaps_worldmap_mapdata={
       lng: "126.9918",
       name: "Seoul",
       color: "#E68570",
-      url: "file:///Users/meganyim/Library/Mobile%20Documents/com~apple~CloudDocs/cmu/junior/PUI/github%20repository/PUIfinalproject_meganyim/korea%20page.html"
-      // url: "https://www.fusioncharts.com/blog/complete-guide-to-javascript-interactive-map/#What_Is_JavaScript_Interactive_Map"
+      url: "korea_page.html"
     },
     "1": {
       lat: "41.3874",
       lng: "2.1686",
       name: "Barcelona",
-      color: "#B6896F"
+      color: "#B6896F",
+      url: "barcelona_page.html"
     },
     "2": {
       name: "Amsterdam",
       lat: "52.3676",
       lng: "4.9041",
-      color: "#B6896F"
+      color: "#B6896F",
+      url: "amsterdam_page.html"
     },
     "3": {
       name: "Philadelphia",
       lat: "39.9526",
       lng: "-75.1652",
-      color: "#728A60"
+      color: "#728A60",
+      url: "philadelphia_page.html"
     },
     "4": {
-      lat: "36.2679",
-      lng: "-112.3535",
-      name: "Grand Canyon",
-      color: "#728A60"
+      lat: "47.6061",
+      lng: "-122.3328",
+      name: "Seattle",
+      color: "#728A60",
+      url: "seattle_page.html"
     },
     "5": {
       lat: "22.3193",
       lng: "114.1694",
       name: "Hong Kong",
-      color: "#E68570"
+      color: "#E68570",
+      url: "hong_kong_page.html"
     }
   },
   labels: {},
