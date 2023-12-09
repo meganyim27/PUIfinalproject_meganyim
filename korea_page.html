@@ -6,6 +6,10 @@
     <title>Korea Page</title>
      <!-- linked files -->
      <link rel="stylesheet" href="stylesheet.css">
+     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script src="script.js"></script>
      <!-- imported fonts -->
      <!-- Caveat Brush font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +23,42 @@
 <body>
     <div class="trip-page-container">
         <div class="title-container">
-            <a href= "landing_page.html"> <p class="title" id="gallery-page-title">Korea</p></a>
+            <div class="tags">
+                <a href="landing_page.html"> <p id="home-tag">Home</p> </a>
+                <a href="gallery_page.html"> <p id="gallery-tag">Gallery</p> </a>
+                <a href="map.html"> <p id="map-tag">Map</p> </a>
+            </div>
+            <p class="title" id="gallery-page-title">Seoul</p>
         </div>
         <div class="trip-content-container">
             <div class="trip-image-container">
-                <img src="images/korea.jpeg" alt="film picture of a cafe shop sign"/>
+                <div class="slider">
+                    <img src="images/korea gallery/img1.jpg"/>
+                    <img src="images/korea gallery/img24.jpeg"/>
+                    <img src="images/korea gallery/img2.jpg"/>
+                    <img src="images/korea gallery/img17.jpeg"/>
+                    <img src="images/korea gallery/img18.jpeg"/>
+                    <img src="images/korea gallery/img4.jpg"/>
+                    <img src="images/korea gallery/img5.jpg"/>
+                    <img src="images/korea gallery/img13.jpeg"/>
+                    <img src="images/korea gallery/img16.jpeg"/>
+                    <img src="images/korea gallery/img3.jpg"/>
+                    <img src="images/korea gallery/img23.jpeg"/>
+                    <img src="images/korea gallery/img14.jpeg"/>
+                    <img src="images/korea gallery/img6.jpg"/>
+                    <img src="images/korea gallery/img8.jpg"/>
+                    <img src="images/korea gallery/img20.jpg"/>
+                    <img src="images/korea gallery/img21.jpg"/>
+                    <img src="images/korea gallery/img22.jpeg"/>
+                    <img src="images/korea gallery/img9.jpg"/>
+                    <img src="images/korea gallery/img10.jpeg"/>
+                    <img src="images/korea gallery/img11.jpeg"/>
+                    <img src="images/korea gallery/img7.jpg"/>
+                    <img src="images/korea gallery/img12.jpeg"/>
+                    <img src="images/korea gallery/img15.jpeg"/>
+                    <img src="images/korea gallery/img19.jpg"/>
+                    <img src="images/korea gallery/img25.jpeg"/>
+                </div>
             </div>
             <div class="about-trip-container">
                 <p class="header">About</p>
@@ -42,7 +77,45 @@
             </div>
             <div class="trip-top3-container">
                 <p class="header">Top 3 Places I recommend</p>
-                <ol class="details">
+                <p>Hover over the cards to see more details...</p>
+                <div class="top3-card-container">
+                    <div class="top3-cards">
+                        <div class="flipcard">
+                            <div class="card-front">
+                                <img src="/images/hongdae.jpg" alt="shopping street of hongdae at night filled with people and shops">
+                                <p>Hongdae</p>
+                            </div>
+                            <div class="card-back">
+                                <p>Hongdae</p>
+                                <p>This is a famous neighborhood in Seoul, now very well known to be a center of a music, art and culture because it surrounds the Hongik University. I loved coming to visit this neighborhood and went very frequently because of how lively it is. There were always people around, especially at night and the streets were always very bright. There was abundant number of shops, gastropubs, and late night restaurants to visit. It was also very common for dance groups to “busk”, which is when dance groups perform on the street at certain locations. I got to watch multiple groups dance and sing and it was really fun and different from California.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top3-cards">
+                        <div class="flipcard">
+                            <div class="card-front">
+                                <img src="/images/bukchon hanok village.jpg" alt="empty street of bukchon hanok village with old traditional korean homes">
+                                <p>Bukchon Hanok Village</p>
+                            </div>
+                            <div class="card-back">
+                                <p>Bukchon Hanok Village</p>
+                                <p>This is a famous residential neighborhood in the Jongno district that is filled with many traditional Korean homes from the Joseon dynasty that were restored for people to live in now. I loved how this tourist destination is also a living area for Korean residents still. It reminds me of the Painted Ladies landmark in San Francisco that are also restored Victorian homes that are lived-in still today. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top3-cards">
+                        <div class="flipcard">
+                            <div class="card-front">
+                                <img src="/images/gangnam underground shopping.jpeg" alt="underground shopping stalls">
+                                <p>Gangnam Underground Shopping Center</p>
+                            </div>
+                            <div class="card-back">
+                                <p>Gangnam Underground Shopping Center</p>
+                                <p>This was also known as the Bus Terminal Shopping Center since it was connected to a Bus Terminal. This was a underground shopping mall that spanned over 200 shops. I really enjoyed visitng here because this isn’t a thing in the U.S. Often times, we have dedicated shopping malls or shops would be above ground in a plaza. However, the Gangnam Underground Shopping Center were smaller boutique-like stores that filled up an entire underground area. </p>
+                            </div>
+                    </div>
+                </div>
+                <!-- <ol class="details">
                     <li>Hongdae
                         <ul>
                             <li>This is a famous neighborhood in Seoul, now very well known to be a center of a music, art and culture because it surrounds the Hongik University. I loved coming to visit this neighborhood and went very frequently because of how lively it is. There were always people around, especially at night and the streets were always very bright. There was abundant number of shops, gastropubs, and late night restaurants to visit. It was also very common for dance groups to “busk”, which is when dance groups perform on the street at certain locations. I got to watch multiple groups dance and sing and it was really fun and different from California.</li>
@@ -58,7 +131,7 @@
                             <li>This was also known as the Bus Terminal Shopping Center since it was connected to a Bus Terminal. This was a underground shopping mall that spanned over 200 shops. I really enjoyed visitng here because this isn’t a thing in the U.S. Often times, we have dedicated shopping malls or shops would be above ground in a plaza. However, the Gangnam Underground Shopping Center were smaller boutique-like stores that filled up an entire underground area. </li>
                         </ul>
                     </li>
-                </ol>
+                </ol> -->
             </div>
         </div>
     </div>

@@ -13,7 +13,6 @@ a:hover { text-decoration: none; color: #2D3842;}
 a:active { text-decoration: none; color: #2D3842;}
 
 .title-container {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,6 +38,15 @@ a:active { text-decoration: none; color: #2D3842;}
   font-weight: normal;
 }
 
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 25px;
+  font-weight: bold;
+}
+
 /* ********* Landing Page ********* */
 
 .landing-page-container {
@@ -54,18 +62,10 @@ a:active { text-decoration: none; color: #2D3842;}
     width: 100%;
 }
 
-.tags {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    font-family: 'Caveat Brush', cursive;
-    font-size: 25px;
-    font-weight: bold;
-}
-
 #gallery-tag {
     display: block;
     width: 100px;
+    margin-bottom: 0px;
     text-align: center;
     border: 2px solid #7E9198;
     background-color: #7E9198;
@@ -77,6 +77,7 @@ a:active { text-decoration: none; color: #2D3842;}
 #map-tag {
     display: block;
     width: 75px;
+    margin-bottom: 0px;
     text-align: center;
     border: 2px solid #A6A999;
     background-color: #A6A999;
@@ -94,6 +95,18 @@ a:active { text-decoration: none; color: #2D3842;}
     flex-direction: column;
 }
 
+#home-tag {
+  display: block;
+  width: 80px;
+  margin-bottom: 0px;
+  text-align: center;
+  border: 2px solid #B88D83;
+  background-color: #B88D83;
+  border-radius: 7px;
+  color: white;
+  text-decoration: none;
+}
+
 .gallery-pictures-container {
     display: flex;
     flex-wrap: wrap;
@@ -107,7 +120,7 @@ a:active { text-decoration: none; color: #2D3842;}
     margin-bottom: 25px;
     justify-content: space-evenly;
     font-family: 'Caveat Brush', cursive;
-    background-color: #ffffff;
+    background-color: #FAF9F6;
 }
 
 /* the hover location caption */
@@ -281,10 +294,22 @@ figure.snip0060.hover figcaption::before {
   flex-direction: column;
 }
 
-.trip-image-container img{
-  display: block;
-  margin: auto;
-  width: 600px;
+.trip-image-container {
+  display: flex;
+  margin: 25px auto auto 25px;
+  width: auto;
+}
+
+.slick-prev.slick-arrow {
+  background-color: transparent;
+  color: transparent;
+  border: transparent;
+}
+
+.slick-next.slick-arrow {
+  background-color: transparent;
+  color: transparent;
+  border: transparent;
 }
 
 .header {
@@ -297,6 +322,176 @@ figure.snip0060.hover figcaption::before {
 .details {
   font-size: 18px;
   color: #2D3842;
+}
+
+/* code from codepen for image gallery */
+
+.slider {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.slick-slide {
+  margin: 0 5px;
+}
+.slick-list {
+  margin: 0px -5px 0px -5px;
+}
+button.slick-next, button.slick-next:hover {
+  position: absolute;
+  top: 41%;
+  right: 54px;
+  width: 47px;
+  height: 75px;
+  background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
+  background-size: 95px;
+}
+button.slick-prev, button.slick-prev:hover {
+  position: absolute;
+  top: 41%;
+  left: 15px;
+  z-index: 1;
+  width: 47px;
+  height: 75px;
+  background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
+  background-size: 95px;
+      background-position-x: right;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 70px;
+  color: #EA8496;
+  line-height: inherit;
+  font-weight: bold;
+}
+.slider img {
+  height: 324px;
+  object-fit: cover;
+}
+
+/* Slick Slider Styles -- Provided by https://kenwheeler.github.io/slick/ */
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('http://maggiesadler.com/wp-content/uploads/2015/10/ajax-loader.gif') center center no-repeat;
 }
 
 /* about trip section */
@@ -328,7 +523,81 @@ figure.snip0060.hover figcaption::before {
   margin: 10px 10px 10px 40px;
 }
 
+/* top3 places recommend section */
 .trip-top3-container {
   display: flex;
   flex-direction: column;
+}
+
+.top3-card-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px 10px 40px;
+}
+
+.top3-cards {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  width: 400px;
+  height: 350px;
+}
+
+.flipcard {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+}
+
+.flipcard img{
+  display: block;
+  width: 350px;
+  margin: 20px 10px 10px 25px;
+}
+
+.flipcard p{
+  font-family: "Caveat Brush";
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+/* code form w3schools to do css effects of a flip card */
+.flipcard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2.0s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.top3-cards:hover .flipcard {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #FAF9F6;
+}
+.card-back {
+  background-color: #FAF9F6;
+  transform: rotateY(180deg);
+}
+
+.card-back p{
+  font-family: "Montserrat";
+  margin: 15px;
+  font-size: 14px;
 }
