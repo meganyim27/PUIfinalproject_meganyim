@@ -6,6 +6,10 @@
     <title>Amsterdam Page</title>
      <!-- linked files -->
      <link rel="stylesheet" href="stylesheet.css">
+     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script src="script.js"></script>
      <!-- imported fonts -->
      <!-- Caveat Brush font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +29,88 @@
                 <a href="map.html"> <p id="map-tag">Map</p> </a>
             </div>
             <p class="title" id="gallery-page-title">Amsterdam</p>
+        </div>
+        <div class="trip-content-container">
+            <div class="trip-image-container">
+                <div class="slider">
+                    <img src="images/amsterdam-gallery/img1.jpeg"/>
+                    <img src="images/amsterdam-gallery/img2.jpeg"/>
+                    <img src="images/amsterdam-gallery/img3.jpeg"/>
+                    <img src="images/amsterdam-gallery/img4.jpeg"/>
+                    <img src="images/amsterdam-gallery/img5.jpeg"/>
+                    <img src="images/amsterdam-gallery/img6.jpeg"/>
+                    <img src="images/amsterdam-gallery/img7.jpeg"/>
+                    <img src="images/amsterdam-gallery/img8.jpeg"/>
+                    <img src="images/amsterdam-gallery/img9.jpeg"/>
+                    <img src="images/amsterdam-gallery/img10.jpeg"/>
+                    <img src="images/amsterdam-gallery/img11.jpeg"/>
+                    <img src="images/amsterdam-gallery/img12.jpeg"/>
+                    <img src="images/amsterdam-gallery/img13.jpeg"/>
+                    <img src="images/amsterdam-gallery/img14.jpeg"/>
+                    <img src="images/amsterdam-gallery/img15.jpeg"/>
+                    <img src="images/amsterdam-gallery/img16.jpeg"/>
+                    <img src="images/amsterdam-gallery/img17.jpeg"/>
+                    <img src="images/amsterdam-gallery/img18.jpeg"/>
+                    <img src="images/amsterdam-gallery/img19.jpeg"/>
+                    <img src="images/amsterdam-gallery/img20.jpeg"/>
+                </div>
+            </div>
+            <div class="about-trip-container">
+                <p class="header">About</p>
+                <p class="details">I visited Amsterdam in summer of 2023 over the July 4th weekend. It was a another solo trip, part of my benefits as a United Intern. I was in Amsterdam for a total of 4 days, visiting different tourist attractions as well as walking around the city myself. It was the first time I ever stayed in a hostel, Generator Amsterdam. I shared the room with 4 others girls and it was super clean and spacious. Some of the very well known places that I visited included the Rijksmuseum, Anne Frank’s House, De 9 Straatjes, Bloemenmarkt, and the Van Wonderen Stroopwafels. I also had the opportunity to join a canal cruise that took me around the famous canals in Amsterdam and explained the significance of the canals and buildings around Amsterdam. Some thing that I found very interesting about Amsterdam that I didn’t know until I arrived at Amsterdam was that “coffee shops” actually meant shops to buy marijuana and “cafes” were what they called places that sold coffee.</p>
+            </div>
+            <div class="trip-highlights-container">
+                <p class="header">Highlights of the Trip</p>
+                <div class="trip-highlights-content-container">
+                    <img src="images/zaanse-schans.jpg" alt="windmills near the lake in the town of Zaanse Schans"/>
+                    <ul class="details">
+                        <li>I loved walking around the city of Amsterdam, taking in the uniqueness of each street and canal. It is so different from the United States. While it was a city, there were very few cars and a lot of bikes and public transportation used. The streets were often made of bricks which was really special. </li>
+                        <li>The food at Amsterdam that I tried were many of the staple foods that originated from Amsterdam, and I realized that most of them are sweets. I tried poffertjes (Dutch mini, fluffy pancakes), pannenkoeken (Dutch thin pancakes), stroopwafels (Dutch caramel cookie), and a very famous dutch apple pie.</li>
+                        <li>I took a day trip to visit Zaanse Schans, a dutch neighborhood on the outskirts of Amsterdam that is known for its traditional windmills. They made clog shoes from scratch and had traditional wooden houses that residents still lived in today. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="trip-top3-container">
+                <p class="header">Top 3 Places I recommend</p>
+                <p>Hover over the cards to see more details...</p>
+                <div class="top3-card-container">
+                    <div class="top3-cards">
+                        <div class="flipcard">
+                            <div class="card-front">
+                                <img src="images/amsterdam-canal.jpg" alt="a canal in amssterdam with boats cruising along the canal">
+                                <p>Exploring the Canals</p>
+                            </div>
+                            <div class="card-back">
+                                <p id="card-name">Exploring the Canals</p>
+                                <p>Whether it is walking around Amsterdam by yourself or with a tour guide, I think the canals are such an integral part of Amsterdam, that it is a must see. De 9 Straatjes is a neighborhood that is known for the boutiques and small shops that surrounds the canals. If you take a canal cruise, the guides talk about the history of the canals and why the canal was built in the first place.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top3-cards">
+                        <div class="flipcard">
+                            <div class="card-front">
+                                <img src="images/stroopwafel.jpg" alt="a window with faux hot air balloons that is the window pane of the shop Van Wonderen Stroopwafels">
+                                <p>Van Wonderen Stroopwafels</p>
+                            </div>
+                            <div class="card-back">
+                                <p id="card-name">Van Wonderen Stroopwafels</p>
+                                <p>Van Wonderen is one of the most famous stroopwafel bakeries in all of Amsterdam. The stroopwafels are made as you order, so it is the very fresh. Van Wonderen also adds different toppings for their stroopwafels, making them a bit more unique. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top3-cards">
+                        <div class="flipcard">
+                            <div class="card-front">
+                                <img src="images/bloemenmarkt.jpg" alt="flowers in a flower market">
+                                <p>Bloemenmarkt</p>
+                            </div>
+                            <div class="card-back">
+                                <p id="card-name">Bloemenmarkt</p>
+                                <p>This is the city’s flower market on the Singel Canal. Vendors sell tulips, daffodils, and other rare species of flowers to visitors and residents of Amsterdam. There are also many souvenirs that are specific for tourists to bring back to their home country as well.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

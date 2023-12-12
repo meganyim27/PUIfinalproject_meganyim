@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amsterdam Page</title>
+    <title>Hong Kong Page</title>
      <!-- linked files -->
      <link rel="stylesheet" href="stylesheet.css">
+     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script src="script.js"></script>
      <!-- imported fonts -->
      <!-- Caveat Brush font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,5 +30,101 @@
             </div>
             <p class="title" id="gallery-page-title">Hong Kong</p>
         </div>
+        <div class="trip-content-container">
+            <div class="trip-image-container">
+                <div class="slider">
+                    <img src="images/hong-kong-gallery/img1.jpeg"/>
+                    <img src="images/hong-kong-gallery/img2.JPG"/>
+                    <img src="images/hong-kong-gallery/img3.JPG"/>
+                    <img src="images/hong-kong-gallery/img4.jpeg"/>
+                    <img src="images/hong-kong-gallery/img5.jpeg"/>
+                    <img src="images/hong-kong-gallery/img6.JPG"/>
+                    <img src="images/hong-kong-gallery/img10.jpg"/>
+                    <img src="images/hong-kong-gallery/img12.JPG"/>
+                    <img src="images/hong-kong-gallery/img9.JPG"/>
+                    <img src="images/hong-kong-gallery/img16.JPG"/>
+                    <img src="images/hong-kong-gallery/img19.JPG"/>
+                    <img src="images/hong-kong-gallery/img17.JPG"/>
+                    <img src="images/hong-kong-gallery/img31.JPG"/>
+                    <img src="images/hong-kong-gallery/img8.JPG"/>
+                    <img src="images/hong-kong-gallery/img18.JPG"/>
+                    <img src="images/hong-kong-gallery/img15.JPG"/>
+                    <img src="images/hong-kong-gallery/img21.JPG"/>
+                    <img src="images/hong-kong-gallery/img22.jpeg"/>
+                    <img src="images/hong-kong-gallery/img20.JPG"/>
+                    <img src="images/hong-kong-gallery/img23.JPG"/>
+                    <img src="images/hong-kong-gallery/img24.jpeg"/>
+                    <img src="images/hong-kong-gallery/img7.JPG"/>
+                    <img src="images/hong-kong-gallery/img25.JPG"/>
+                    <img src="images/hong-kong-gallery/img26.JPG"/>
+                    <img src="images/hong-kong-gallery/img13.JPG"/>
+                    <img src="images/hong-kong-gallery/img27.JPG"/>
+                    <img src="images/hong-kong-gallery/img28.JPG"/>
+                    <img src="images/hong-kong-gallery/img14.jpeg"/>
+                    <img src="images/hong-kong-gallery/img29.JPG"/>
+                    <img src="images/hong-kong-gallery/img11.jpg"/>
+                    <img src="images/hong-kong-gallery/img30.JPG"/>
+                    <img src="images/hong-kong-gallery/img32.JPG"/>
+                </div>
+            </div>
+            <div class="about-trip-container">
+                <p class="header">About</p>
+                <p class="details">My family is from Hong Kong, so it is a city that I am very familiar with because we go every year during Christmas to visit my extended family from my mom’s side. For this page, I dedicated it to my most recent trip back to Hong Kong because my cousins and I ventured out more to different places in the city. We had a barbecue with the family alongside a beach, where we brought our own food and hung out on Christmas day. It is also our family tradition to do secret santa with all of my cousins, aunts, and uncles on Christmas night. My family also often stays until New Year’s and we watch the fireworks and countdown to the new year altogether. One thing to note about Hong Kong is that it’s main attraction is the food that they have.</p>
+            </div>
+            <div class="trip-highlights-container">
+                <p class="header">Highlights of the Trip</p>
+                <div class="trip-highlights-content-container">
+                    <img src="images/hong-kong-fam.jpeg" alt="two girls standing in front of a christmas tree for a picture"/>
+                    <ul class="details">
+                        <li>My favorite parts of visiting Hong Kong is seeing my family. My parents brought me back to Hong Kong every year, so I got to become very close to my cousins. Since we only had time to see each other once or twice a year, it is always a really fun time.</li>
+                        <li>The food in Hong Kong is also really good. Hong Kong is known for their 茶餐廳 (Hong Kong-style cafe/diner) that people love to go out for breakfast and lunch. Another type of food that I really love to eat in Hong Kong is 點心 (dim sum). While dim sum is also in the U.S., the afternoon tea restaurants in Hong Kong are a lot more authentic.</li>
+                        <li>My cousin and I love going cafe hopping. There are a lot of aesthetic cafes in Hong Kong, ones that decorate in a unique way and have their own themes. This last trip to Hong Kong, my cousins and I were also old enough to go to the bars in Hong Kong, which was also a new and fun experience.</li>
+                        <li>My family’s secret santa is also a favorite memory of mine since our entire family gets together and have a night of trying to guess who is each other’s secret santa and have laughs about it.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="trip-top3-container">
+                <p class="header">Top 3 Places I recommend</p>
+                <p>Hover over the cards to see more details...</p>
+                <div class="top3-card-container">
+                    <div class="top3-cards">
+                        <div class="flipcard">
+                            <div class="card-front">
+                                <img src="images/cwb.jpg" alt="the streets of Causeway Bay, packed with a lot of people">
+                                <p>Causeway Bay</p>
+                            </div>
+                            <div class="card-back">
+                                <p id="card-name">Causeway Bay</p>
+                                <p>This is a major shopping neighborhood on Hong Kong Island. There are so many shops and restaurants in Causeway Bay. It also has Hong Kong’s version of Times Square, which is a 16 floor building of stores and restaurants. Causeway Bay is also very special because it is near so many other neighborhoods that people live in, so it is also a bustling area at night.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top3-cards">
+                        <div class="flipcard">
+                            <div class="card-front">
+                                <img src="images/hk-cafe.jpg" alt="a table with egg tart, pineapple bun, and Hong Kong milk tea">
+                                <p>Angus Cafe</p>
+                            </div>
+                            <div class="card-back">
+                                <p id="card-name">Angus Cafe</p>
+                                <p>This is also known as 半島冰室, a Hong Kong-style cafe near my grandparents apartment. We love to get takeout from there for lunch or go have their breakfast. One thing unique about Hong Kong style cafes are that they normally are very fast-paced, meaning tables are crowded, but food comes out very fast.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top3-cards">
+                        <div class="flipcard">
+                            <div class="card-front">
+                                <img src="images/repulse-bay.JPG" alt="view of the ocean and boats in Repulse Bay">
+                                <p>Repulse Bay</p>
+                            </div>
+                            <div class="card-back">
+                                <p id="card-name">Repulse Bay</p>
+                                <p>This is a beach in Hong Kong Island and it is know to have beautiful white sand and nice beaches. Due to Repulse Bay being near the water, it is also known for its seafood. It is also close to Stanley Market, which is another tourist attraction.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

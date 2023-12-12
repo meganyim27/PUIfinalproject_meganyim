@@ -57,7 +57,7 @@ a:active { text-decoration: none; color: #2D3842;}
     gap: 50px;
 }
 
-#homepage-video img {
+#homepage-picture img {
     display: block;
     width: 100%;
 }
@@ -320,11 +320,12 @@ figure.snip0060.hover figcaption::before {
 }
 
 .details {
+  margin-top: 0px;
   font-size: 18px;
   color: #2D3842;
 }
 
-/* code from codepen for image gallery */
+/* code from codepen for image carousel https://codepen.io/EllieSadler/pen/NGvrNq */
 
 .slider {
   max-width: 1000px;
@@ -505,6 +506,10 @@ button.slick-prev, button.slick-prev:hover {
   margin: 20px 10px 10px 40px;
 }
 
+ul li { 
+  padding: 0px 0px 10px 0px; 
+}
+
 /* trip highlights section */
 .trip-highlights-container {
   display: flex;
@@ -512,7 +517,6 @@ button.slick-prev, button.slick-prev:hover {
 }
 
 .trip-highlights-container img{
-  display: block;
   width: 500px;
   height: 325px;
 }
@@ -532,6 +536,7 @@ button.slick-prev, button.slick-prev:hover {
 .top3-card-container {
   display: flex;
   justify-content: space-between;
+  gap: 5px;
   margin: 10px 10px 10px 40px;
 }
 
@@ -543,16 +548,10 @@ button.slick-prev, button.slick-prev:hover {
   height: 350px;
 }
 
-.flipcard {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 500px;
-}
-
 .flipcard img{
   display: block;
   width: 350px;
+  height: 275px;
   margin: 20px 10px 10px 25px;
 }
 
@@ -564,7 +563,8 @@ button.slick-prev, button.slick-prev:hover {
   margin-bottom: 15px;
 }
 
-/* code form w3schools to do css effects of a flip card */
+/* code form w3schools to do css effects of a flip card: https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+
 .flipcard {
   position: relative;
   width: 100%;
@@ -599,5 +599,10 @@ button.slick-prev, button.slick-prev:hover {
 .card-back p{
   font-family: "Montserrat";
   margin: 15px;
-  font-size: 14px;
+  font-size: 18px;
+}
+
+.card-back > #card-name {
+  font-family: "Caveat Brush";
+  font-size: 25px;
 }
