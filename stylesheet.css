@@ -72,6 +72,7 @@ a:active { text-decoration: none; color: #2D3842;}
     border-radius: 7px;
     color: white;
     text-decoration: none;
+    font-size: 25px;
 }
 
 #map-tag {
@@ -79,11 +80,12 @@ a:active { text-decoration: none; color: #2D3842;}
     width: 75px;
     margin-bottom: 0px;
     text-align: center;
-    border: 2px solid #A6A999;
-    background-color: #A6A999;
+    border: 2px solid #898D7A;
+    background-color: #898D7A;
     border-radius: 7px;
     color: white;
     text-decoration: none;
+    font-size: 25px;
 }
 
 /* ********* Gallery Page ********* */
@@ -100,11 +102,12 @@ a:active { text-decoration: none; color: #2D3842;}
   width: 80px;
   margin-bottom: 0px;
   text-align: center;
-  border: 2px solid #B88D83;
-  background-color: #B88D83;
+  border: 2px solid #AC716D;
+  background-color: #AC716D;
   border-radius: 7px;
   color: white;
   text-decoration: none;
+  font-size: 25px;
 }
 
 .gallery-pictures-container {
@@ -127,6 +130,7 @@ a:active { text-decoration: none; color: #2D3842;}
 .img-place-name {
     padding: 60px 35px;
     font-size: 40px;
+    color: white;
     -webkit-transform: translate3d(0%, -50%, 0);
     transform: translate3d(0%, -50%, 0);
     -webkit-transition-delay: 0s;
